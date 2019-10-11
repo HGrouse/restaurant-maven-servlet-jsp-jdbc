@@ -1,0 +1,592 @@
+
+.mainpage {
+    width: 1100px;
+    padding: 16px;
+    margin: 0px auto;
+    background: #FFF;
+    border-radius: 5px;
+}
+
+.mainpage .showbar {
+    height: 600px;
+    margin-left: 25%;
+    padding: 1px 16px 40px;
+}
+
+.mainpage input[type=submit] {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #000;
+    text-decoration: none;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    text-align: left;
+    cursor: pointer;
+}
+
+.mainpage ul {
+    list-style-type: none;
+    margin: 18px 0px;
+    padding: 10px 0px;
+    width: 275px;
+    background-color: #f1f1f1;
+    position: absolute;
+    /*  height: 100%;*/
+    overflow: auto;
+}
+
+.mainpage input[type=submit].active {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+input[type=checkbox] {
+    margin-left: 30%;
+}
+
+.user_view table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.user_view .action_edit,
+.user_view .action_dismiss,
+.user_view .action_hire {
+    border: none;
+}
+
+.user_view .action_edit input[type=submit] {
+    border: 1px solid orange;
+    background: orange;
+}
+
+.user_view .action_hire input[type=submit] {
+    border: 1px solid green;
+    background: green;
+}
+
+.user_view .action_dismiss input[type=submit] {
+    border: 1px solid red;
+    background: red;
+}
+
+.user_view .action_edit input[type=submit],
+.user_view .action_dismiss input[type=submit],
+.user_view .action_hire input[type=submit] {
+    border: none;
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+.user_view td, th {
+    border: 1px solid black; /* Параметры рамки */
+    padding: 5px;
+   }
+
+.user_view th {
+    background: #95badf; /* Цвет фона */
+   }
+
+.page_to_show {
+    position: inherit;
+    width: 100%;
+    place-content: center;
+    display: inline-flex;
+}
+
+.page_to_show input[type=button] {
+    border: 1px solid black;
+    background: none;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+.edit_box input[type=text],
+.edit_box input[type=password],
+.edit_box input[type=date],
+.edit_box select {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 20px 0px 5px;
+    background: #f1f1f1;
+    border: none;
+}
+
+.edit_box input[type=date] {
+    padding: 6px 10px;
+    language: en;
+
+}
+
+.edit_box {
+    display: inline-flex;
+    width: 49%;
+}
+
+.edit_button {
+    padding: 18px 15%;
+
+}
+
+.edit_box label {
+    position: absolute;
+}
+
+.edit_button input[type=submit] {
+
+    font-size: 20px;
+    width: 95%;
+    border: none;
+    background-color: #82abd4;
+    color: white;
+    text-decoration: none;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/* Add padding to containers */
+.registration {
+    width: 700px;
+    padding: 16px;
+    margin: 0px auto;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.registration p {
+    color: red;
+    font-size: 13px;
+    margin: 5px;
+    margin-top: -20px;
+}
+
+/* Full-width input fields */
+.registration input[type=text],
+.registration input[type=password],
+.registration input[type=date],
+.registration select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+
+.registration input[type=date] {
+    padding: 6px 10px;
+    language: en;
+}
+
+.registration input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+.registration hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+.registration a {
+    color: dodgerblue;
+}
+
+
+.local_input {
+    display: inline-block;
+    padding: 29px 0px 0 50px;
+}
+
+.local_input input[type=submit] {
+    margin: 2px 0;
+    padding: 1px 20px;
+    background-color: #95badf;
+}
+
+
+/*  General CSS  */
+body {
+    background: #fff;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #626262;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+h1, h2, h3, h4,
+h5, h6 {
+    font-weight: bolder
+}
+
+
+/*  Header Section  */
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgba(28, 54, 85, .2);
+}
+
+header .logo {
+    margin-top: 40px;
+    float: left;
+}
+
+header a.hamburger {
+    text-decoration: none;
+    display: none;
+    float: right;
+    margin-top: 41px;
+    width: 24px;
+    height: 19px;
+    background: url('../img/hamburger_icon.png') no-repeat;
+}
+
+header a.hamburger.opned {
+    width: 19px;
+    background: url('../img/close_menu_icon.png') no-repeat;
+}
+
+
+header nav {
+    float: right;
+    opacity: 1;
+}
+
+
+header nav ul {
+    margin-top: 40px;
+    list-style: none;
+    overflow: hidden;
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 50px;
+}
+
+/*header nav form input[type="submit"],*/
+header nav ul li a,
+header nav .login_btn {
+
+    text-decoration: none;
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+header nav .login_btn {
+    display: inline-block;
+}
+
+header nav .login_btn {
+    float: right;
+    margin: 30px 0 0 50px;
+    padding: 10px 30px 11px 30px;
+    border: 2px solid #ffffff;
+    background: transparent;
+
+    transition: background .1s linear;
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -o-transition: background .1s linear;
+}
+
+header nav .login_btn:hover {
+    background: #ffffff;
+    color: #1c3655;
+}
+
+
+/* Full-width inputs */
+header nav input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+header nav .container a {
+    color: black;
+}
+
+.act_login_btn input[type="submit"] {
+
+    margin: 8px 0px -12px 0px;
+}
+
+.regbtn input[type="submit"] {
+    background: #FFA07A;
+    margin: -10px 0px 8px 0px;
+}
+
+header nav form input[type="submit"],
+header nav form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+header nav form button:hover {
+    opacity: 0.8;
+}
+
+
+/*  Hero Section  */
+
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url('../img/hero.jpg') no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.hero .caption {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -105px;
+}
+
+.hero .caption h2 {
+    color: #fff;
+    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+.hero .caption h3 {
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: -15px 0 0 25px;
+    left: 1px;
+}
+
+
+/*  footer  */
+footer {
+    background: #95badf;
+}
+
+footer .footer > ul {
+    overflow: hidden;
+}
+
+footer .footer > ul > li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin-right: 60px;
+}
+
+footer .footer > ul > li:last-child {
+    margin-right: 0;
+}
+
+
+footer .footer > ul > li.links {
+    width: 197px;
+}
+
+footer ul li.links > ul > li {
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 27px;
+}
+
+footer ul li.links > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+footer .footer > ul > li.links li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-align: left;
+}
+
+footer .footer > ul > li.about {
+    width: 327px;
+}
+
+footer ul li.about p {
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 34px;
+    margin-top: -9px;
+}
+
+footer ul li.about > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+footer ul li.about > ul > li:last-child {
+    margin-right: 0;
+}
+
+footer ul li.about > ul > li a {
+    background: url('../img/social_media.png') no-repeat;
+}
+
+footer ul li.about > ul > li a.facebook {
+    display: block;
+    width: 10px;
+    height: 18px;
+    background-position: 0 0;
+}
+
+footer ul li.about > ul > li a.twitter {
+    display: block;
+    width: 19px;
+    height: 18px;
+    background-position: -11px 0px;
+}
+
+footer ul li.about > ul > li a.google {
+    display: block;
+    width: 10px;
+    height: 18px;
+    background-position: -31px 0px;
+}
+
+footer ul li.about > ul > li a.skype {
+    display: block;
+    width: 17px;
+    height: 18px;
+    background-position: -43px 0px;
+}
+
+footer .copyrights {
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    border-top: 1px solid #82abd4;
+}
+
+footer .copyrights a.ph_link {
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+header nav .exitbutton {
+    display: inline-block;
+
+
+}
+
+header nav form.exitbutton {
+    float: right;
+    cursor: pointer;
+}
+
+
+header nav .exitbutton input[type="submit"] {
+    border: 2px solid #ffffff;
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: -18px 0 0 50px;
+    padding: 10px 30px 11px 30px;
+}
+
+.dismissal_page {
+    height: 500px;
+}
