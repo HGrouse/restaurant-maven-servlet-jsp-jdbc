@@ -28,7 +28,6 @@ public class AuthorizationCommand implements Command{
     public void execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
         User user = null;
-        String goToPage = null;
 
         String login = request.getParameter(ParameterName.REQ_PARAM_LOGIN);
         String password = request.getParameter(ParameterName.REQ_PARAM_PASSWORD);
@@ -43,19 +42,18 @@ public class AuthorizationCommand implements Command{
 
             if (user != null) {
                 session.setAttribute(ParameterName.SESSION_ATTRIBUTE_USER, user);
-                goToPage = JSPPath.REDIRECT_TO_USER_INFORMATION_PAGE;
+                response.sendRedirect(JSPPath.REDIRECT_TO_USER_INFORMATION_PAGE);
             } else {
-                request.setAttribute(ParameterName.REQ_ATTRIBUTE_ANSWER_CODE, VerificationCode.INCORRECT_LOGIN);
-
+                session.setAttribute(ParameterName.REQ_ATTRIBUTE_ANSWER_CODE, VerificationCode.INCORRECT_LOGIN);
                 RequestDispatcher dispatcher = request.getRequestDispatcher(JSPPath.INDEX_PAGE);
                 dispatcher.forward(request, response);
             }
 
         } catch (ServiceException e) {
             log.error(e);
-            goToPage = JSPPath.REDIRECT_TO_ERROR_PAGE;
+            response.sendRedirect(JSPPath.REDIRECT_TO_ERROR_PAGE);
         }
-        response.sendRedirect(goToPage);
+
     }
 
 }

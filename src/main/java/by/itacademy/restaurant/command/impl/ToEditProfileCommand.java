@@ -45,11 +45,11 @@ public class ToEditProfileCommand implements Command {
             // getting user id we'll edit
             String id = request.getParameter(ParameterName.REQ_PARAM_ID);
 
-            if (id == null) {
+            if (id == null || "".equals(id)) {
                 id = (String) session.getAttribute(ParameterName.REQ_PARAM_ID);
                 session.removeAttribute(ParameterName.REQ_PARAM_ID);
             }
-            if (id == null) {
+            if (id == null || "".equals(id)) {
                 id = String.valueOf(user.getId());
             }
 
@@ -80,8 +80,5 @@ public class ToEditProfileCommand implements Command {
         if(session !=  null){
             session.removeAttribute(ParameterName.REQ_ATTRIBUTE_ANSWER_CODE);
         }
-
-
-
     }
 }
