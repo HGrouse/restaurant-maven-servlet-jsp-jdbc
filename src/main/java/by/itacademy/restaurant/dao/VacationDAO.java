@@ -1,6 +1,6 @@
 package by.itacademy.restaurant.dao;
 
-import by.itacademy.restaurant.command.VacationType;
+import by.itacademy.restaurant.configuration.VacationType;
 import by.itacademy.restaurant.bean.Vacation;
 
 import java.util.Calendar;

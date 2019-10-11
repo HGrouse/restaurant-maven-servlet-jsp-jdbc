@@ -3,6 +3,7 @@ package by.itacademy.restaurant.service.validation;
 import by.itacademy.restaurant.bean.user.EditAdminAccessInfo;
 import by.itacademy.restaurant.bean.user.EditUserAccessInfo;
 import by.itacademy.restaurant.bean.user.RegistrationUserInfo;
+import by.itacademy.restaurant.configuration.VerificationCode;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

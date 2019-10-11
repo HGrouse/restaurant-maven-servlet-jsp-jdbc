@@ -1,6 +1,6 @@
 package by.itacademy.restaurant.bean.user;
 
-import by.itacademy.restaurant.command.Role;
+import by.itacademy.restaurant.configuration.Role;
 
 import java.util.Calendar;
 

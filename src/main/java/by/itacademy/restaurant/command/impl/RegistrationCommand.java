@@ -2,10 +2,12 @@ package by.itacademy.restaurant.command.impl;
 
 import by.itacademy.restaurant.command.*;
 import by.itacademy.restaurant.bean.user.RegistrationUserInfo;
+import by.itacademy.restaurant.configuration.JSPPath;
+import by.itacademy.restaurant.configuration.ParameterName;
 import by.itacademy.restaurant.service.EmployeeService;
 import by.itacademy.restaurant.service.ServiceException;
 import by.itacademy.restaurant.service.ServiceProvider;
-import by.itacademy.restaurant.service.validation.VerificationCode;
+import by.itacademy.restaurant.configuration.VerificationCode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

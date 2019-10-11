@@ -1,13 +1,13 @@
 package by.itacademy.restaurant.command.impl;
 
 import by.itacademy.restaurant.command.Command;
-import by.itacademy.restaurant.command.JSPPath;
-import by.itacademy.restaurant.command.ParameterName;
+import by.itacademy.restaurant.configuration.JSPPath;
+import by.itacademy.restaurant.configuration.ParameterName;
 import by.itacademy.restaurant.bean.user.User;
 import by.itacademy.restaurant.service.EmployeeService;
 import by.itacademy.restaurant.service.ServiceException;
 import by.itacademy.restaurant.service.ServiceProvider;
-import by.itacademy.restaurant.service.validation.VerificationCode;
+import by.itacademy.restaurant.configuration.VerificationCode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -44,7 +44,7 @@ public class AuthorizationCommand implements Command{
                 session.setAttribute(ParameterName.SESSION_ATTRIBUTE_USER, user);
                 response.sendRedirect(JSPPath.REDIRECT_TO_USER_INFORMATION_PAGE);
             } else {
-                session.setAttribute(ParameterName.REQ_ATTRIBUTE_ANSWER_CODE, VerificationCode.INCORRECT_LOGIN);
+                request.setAttribute(ParameterName.REQ_ATTRIBUTE_ANSWER_CODE, VerificationCode.INCORRECT_LOGIN);
                 RequestDispatcher dispatcher = request.getRequestDispatcher(JSPPath.INDEX_PAGE);
                 dispatcher.forward(request, response);
             }

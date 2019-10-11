@@ -1,4 +1,4 @@
-package by.itacademy.restaurant.service.validation;
+package by.itacademy.restaurant.configuration;
 
 public final class VerificationCode {
 

@@ -1,6 +1,6 @@
 package by.itacademy.restaurant.dao.impl;
 
-import by.itacademy.restaurant.command.VacationType;
+import by.itacademy.restaurant.configuration.VacationType;
 import by.itacademy.restaurant.dao.DAOException;
 import by.itacademy.restaurant.dao.VacationDAO;
 import by.itacademy.restaurant.bean.Vacation;

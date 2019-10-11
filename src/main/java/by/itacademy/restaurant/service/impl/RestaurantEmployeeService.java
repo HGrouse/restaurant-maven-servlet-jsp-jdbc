@@ -10,13 +10,13 @@ import by.itacademy.restaurant.service.ServiceException;
 import by.itacademy.restaurant.service.impl.util.EditStringCreator;
 import by.itacademy.restaurant.service.validation.DateConverter;
 import by.itacademy.restaurant.service.validation.Verification;
-import by.itacademy.restaurant.service.validation.VerificationCode;
+import by.itacademy.restaurant.configuration.VerificationCode;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static by.itacademy.restaurant.service.validation.VerificationCode.CORRECT_INFORMATION;
+import static by.itacademy.restaurant.configuration.VerificationCode.CORRECT_INFORMATION;
 
 
 public class RestaurantEmployeeService implements EmployeeService {

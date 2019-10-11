@@ -1,4 +1,4 @@
-package by.itacademy.restaurant.command;
+package by.itacademy.restaurant.configuration;
 
 public enum VacationType {
     VACATION (1),

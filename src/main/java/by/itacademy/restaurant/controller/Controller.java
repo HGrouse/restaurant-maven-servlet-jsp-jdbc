@@ -2,7 +2,7 @@ package by.itacademy.restaurant.controller;
 
 import by.itacademy.restaurant.command.Command;
 import by.itacademy.restaurant.command.CommandProvider;
-import by.itacademy.restaurant.command.ParameterName;
+import by.itacademy.restaurant.configuration.ParameterName;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

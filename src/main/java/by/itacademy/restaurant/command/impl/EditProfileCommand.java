@@ -4,13 +4,13 @@ import by.itacademy.restaurant.bean.user.EditAdminAccessInfo;
 import by.itacademy.restaurant.bean.user.EditUserAccessInfo;
 import by.itacademy.restaurant.bean.user.User;
 import by.itacademy.restaurant.command.Command;
-import by.itacademy.restaurant.command.JSPPath;
-import by.itacademy.restaurant.command.ParameterName;
-import by.itacademy.restaurant.command.Role;
+import by.itacademy.restaurant.configuration.JSPPath;
+import by.itacademy.restaurant.configuration.ParameterName;
+import by.itacademy.restaurant.configuration.Role;
 import by.itacademy.restaurant.service.EmployeeService;
 import by.itacademy.restaurant.service.ServiceException;
 import by.itacademy.restaurant.service.ServiceProvider;
-import by.itacademy.restaurant.service.validation.VerificationCode;
+import by.itacademy.restaurant.configuration.VerificationCode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

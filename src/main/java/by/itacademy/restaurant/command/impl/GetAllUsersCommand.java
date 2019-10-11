@@ -1,11 +1,11 @@
 package by.itacademy.restaurant.command.impl;
 
-import by.itacademy.restaurant.command.ParameterName;
-import by.itacademy.restaurant.command.Role;
+import by.itacademy.restaurant.configuration.ParameterName;
+import by.itacademy.restaurant.configuration.Role;
 import by.itacademy.restaurant.bean.user.UserForView;
 import by.itacademy.restaurant.command.Command;
 import by.itacademy.restaurant.bean.user.User;
-import by.itacademy.restaurant.command.JSPPath;
+import by.itacademy.restaurant.configuration.JSPPath;
 import by.itacademy.restaurant.service.EmployeeService;
 import by.itacademy.restaurant.service.ServiceException;
 import by.itacademy.restaurant.service.ServiceProvider;
@@ -20,8 +20,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-import static by.itacademy.restaurant.command.DefaultSetting.COUNT_USERS_ON_PAGE;
-import static by.itacademy.restaurant.command.DefaultSetting.DEFAULT_FIRST_PAGE;
+import static by.itacademy.restaurant.configuration.DefaultSetting.COUNT_USERS_ON_PAGE;
+import static by.itacademy.restaurant.configuration.DefaultSetting.DEFAULT_FIRST_PAGE;
 
 
 public class GetAllUsersCommand implements Command {

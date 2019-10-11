@@ -1,15 +1,14 @@
 package by.itacademy.restaurant.dao.impl;
 
 import by.itacademy.restaurant.bean.user.*;
-import by.itacademy.restaurant.command.Role;
+import by.itacademy.restaurant.configuration.Role;
 import by.itacademy.restaurant.dao.DAOException;
 import by.itacademy.restaurant.dao.EmployeeDAO;
 import by.itacademy.restaurant.dao.SQLParameterName;
 import by.itacademy.restaurant.dao.impl.util.DataProtector;
 import by.itacademy.restaurant.dao.pool.ConnectionPool;
-import by.itacademy.restaurant.service.validation.VerificationCode;
+import by.itacademy.restaurant.configuration.VerificationCode;
 
-import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
