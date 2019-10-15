@@ -113,7 +113,7 @@ public class SQLEmployeeDAO extends SQLRequest implements EmployeeDAO {
     }
 
     @Override
-    public void editInfo(int userId, Set<Map.Entry<String, String>> setEnt) throws DAOException {
+    public void editInfo(int userId, Set<Map.Entry<String, String>> values) throws DAOException {
 
         ConnectionPool pool = null;
         Connection connection = null;
@@ -129,9 +129,9 @@ public class SQLEmployeeDAO extends SQLRequest implements EmployeeDAO {
             connection.setAutoCommit(false);
 
 
-            for (Map.Entry<String, String> e : setEnt) {
+            for (Map.Entry<String, String> value : values) {
 
-                SQL = buildSQL(e.getKey(), e.getValue(), userId);
+                SQL = buildSQL(value.getKey(), value.getValue(), userId);
                 statement.addBatch(SQL.toString());
             }
 
@@ -141,6 +141,11 @@ public class SQLEmployeeDAO extends SQLRequest implements EmployeeDAO {
 
 
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
             throw new DAOException("Cannot change User Information", e);
         } finally {
             if (pool != null) {
